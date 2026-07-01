@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pizza Express Da Mario · Dossenheim — Pizza, Pasta & mehr</title>
+  <meta name="description" content="Handgemachte Pizza, Pasta und Schnitzel in Dossenheim. Frisch aus dem Ofen von Da Mario. Abholung & Lieferung – 4,8 von 5 bei 355 Bewertungen." />
+  <meta name="theme-color" content="#0e0b09" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Pizza Express Da Mario · Dossenheim" />
+  <meta property="og:description" content="Handgemachte Pizza, Pasta und Schnitzel – frisch aus dem Ofen." />
+  <meta property="og:image" content="assets/img/hero.jpg" />
+  <meta property="og:type" content="restaurant.restaurant" />
+
+  <!-- LocalBusiness Schema -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Restaurant",
+    "name": "Pizza Express Da Mario",
+    "servesCuisine": ["Pizza", "Pasta", "Italienisch"],
+    "priceRange": "€€",
+    "telephone": "+4962218686188",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Ringstraße 5",
+      "postalCode": "69221",
+      "addressLocality": "Dossenheim",
+      "addressCountry": "DE"
+    },
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": "4.8",
+      "reviewCount": "355"
+    }
+  }
+  </script>
+</head>
+<body>
+  <!-- NAV -->
+  <header class="nav" id="nav">
+    <a href="#top" class="nav__brand" aria-label="Pizza Express Da Mario – Startseite">
+      <span class="nav__brand-line">Pizza Express</span>
+      <span class="nav__brand-name">Da Mario</span>
+    </a>
+    <nav class="nav__links" aria-label="Hauptnavigation">
+      <a href="#speisekarte">Speisekarte</a>
+      <a href="#geschichte">Über uns</a>
+      <a href="#kontakt">Kontakt</a>
+    </nav>
+    <div class="nav__actions">
+      <a href="tel:+4962218686188" class="btn btn--ghost" aria-label="Anrufen">06221 8686188</a>
+      <a href="https://bestelleck.de/pizza-express" target="_blank" rel="noopener" class="btn btn--solid">Jetzt bestellen</a>
+    </div>
+    <button class="nav__burger" id="burger" aria-label="Menü öffnen" aria-expanded="false" aria-controls="mobile-menu">
+      <span></span><span></span>
+    </button>
+  </header>
+
+  <!-- MOBILE MENU -->
+  <div class="mobile-menu" id="mobile-menu" hidden>
+    <a href="#speisekarte">Speisekarte</a>
+    <a href="#geschichte">Über uns</a>
+    <a href="#kontakt">Kontakt</a>
+    <a href="tel:+4962218686188" class="btn btn--ghost">06221 8686188</a>
+    <a href="https://bestelleck.de/pizza-express" target="_blank" rel="noopener" class="btn btn--solid">Jetzt bestellen</a>
+  </div>
+
+  <main id="top">
+    <!-- HERO -->
+    <section class="hero">
+      <div class="hero__media">
+        <img src="assets/img/hero.jpg" alt="Frisch gebackene Pizza Margherita mit Basilikum" class="hero__img" fetchpriority="high" />
+        <div class="hero__scrim"></div>
+      </div>
+      <div class="hero__inner">
+        <p class="hero__eyebrow reveal">Dossenheim · seit über 20 Jahren</p>
+        <h1 class="hero__title">
+          <span class="reveal">Aus dem Ofen,</span>
+          <span class="reveal hero__title--em">nicht von der Stange.</span>
+        </h1>
+        <p class="hero__lead reveal">
+          Pizza auf dünnem Boden, Pasta mit Sauce vom Vortag angesetzt,
+          Schnitzel frisch paniert. Kein Schnickschnack – nur das, was schmeckt.
+        </p>
+        <div class="hero__cta reveal">
+          <a href="https://bestelleck.de/pizza-express" target="_blank" rel="noopener" class="btn btn--solid btn--lg">Jetzt bestellen</a>
+          <a href="#speisekarte" class="btn btn--ghost btn--lg">Zur Speisekarte</a>
+        </div>
+        <div class="hero__meta reveal">
+          <span class="rating"><strong>4,8</strong>/5 <span class="rating__stars" aria-hidden="true">★★★★★</span></span>
+          <span class="dot" aria-hidden="true"></span>
+          <span>355 Bewertungen</span>
+          <span class="dot" aria-hidden="true"></span>
+          <span>Abholung &amp; Lieferung</span>
+        </div>
+      </div>
+      <a href="#geschichte" class="hero__scroll" aria-label="Weiter scrollen"><span></span></a>
+    </section>
+
+    <!-- STORY -->
+    <section class="story" id="geschichte">
+      <div class="story__text">
+        <p class="kicker reveal">Da Mario</p>
+        <h2 class="reveal">Ein kleiner Laden in der Ringstraße, der sein Handwerk kann.</h2>
+        <p class="reveal">
+          Bei uns gibt es keine Fließband-Pizza. Der Teig ruht, bis er soll.
+          Belegt wird von Hand, gebacken heiß und kurz, damit der Rand aufgeht
+          und die Mitte dünn bleibt. Dazu Pasta, Schnitzel und Salate –
+          alles frisch gemacht, wenn ihr bestellt.
+        </p>
+        <p class="reveal">
+          Über 350 Gäste haben uns mit 4,8 von 5 bewertet. Kommt vorbei
+          oder lasst euch das Essen nach Hause bringen.
+        </p>
+        <a href="#speisekarte" class="link-arrow reveal">Die ganze Karte ansehen</a>
+      </div>
+      <div class="story__media reveal">
+        <img src="assets/img/ingredients.jpg" alt="Frischer Pizzateig mit Tomaten, Basilikum und Mozzarella" loading="lazy" />
+      </div>
+    </section>
+
+    <!-- MARQUEE -->
+    <div class="marquee" aria-hidden="true">
+      <div class="marquee__track">
+        <span>Pizza</span><span>·</span><span>Pasta</span><span>·</span><span>Al Forno</span><span>·</span><span>Schnitzel</span><span>·</span><span>Salate</span><span>·</span><span>Fingerfood</span><span>·</span>
+        <span>Pizza</span><span>·</span><span>Pasta</span><span>·</span><span>Al Forno</span><span>·</span><span>Schnitzel</span><span>·</span><span>Salate</span><span>·</span><span>Fingerfood</span><span>·</span>
+      </div>
+    </div>
+
+    <!-- SPEISEKARTE -->
+    <section class="menu" id="speisekarte">
+      <div class="menu__head">
+        <p class="kicker reveal">Speisekarte</p>
+        <h2 class="reveal">Alles frisch gemacht.</h2>
+        <p class="menu__note reveal">Preise inkl. MwSt. 5 % Rabatt auf alles im Warenkorb.</p>
+      </div>
+      <div class="menu__tabs" id="menu-tabs" role="tablist" aria-label="Kategorien"></div>
+      <div class="menu__grid" id="menu-grid"></div>
+      <div class="menu__cta reveal">
+        <a href="https://bestelleck.de/pizza-express" target="_blank" rel="noopener" class="btn btn--solid btn--lg">Bei BestellEck bestellen</a>
+      </div>
+    </section>
+
+    <!-- PASTA BAND -->
+    <section class="band">
+      <img src="assets/img/pasta.jpg" alt="Dampfende Pasta al Forno in Tonschale" class="band__img" loading="lazy" />
+      <div class="band__scrim"></div>
+      <blockquote class="band__quote reveal">
+        „Frisch, heiß, ehrlich. Genau wie beim Italiener soll.“
+      </blockquote>
+    </section>
+
+    <!-- KONTAKT -->
+    <section class="contact" id="kontakt">
+      <div class="contact__inner">
+        <div class="contact__col">
+          <p class="kicker reveal">Kontakt &amp; Öffnungszeiten</p>
+          <h2 class="reveal">Vorbeikommen oder liefern lassen.</h2>
+          <ul class="contact__list reveal">
+            <li>
+              <span class="contact__label">Adresse</span>
+              <a href="https://maps.google.com/?q=Pizza+Express+Da+Mario+Ringstra%C3%9Fe+5+69221+Dossenheim" target="_blank" rel="noopener">Ringstraße 5, 69221 Dossenheim</a>
+            </li>
+            <li>
+              <span class="contact__label">Telefon</span>
+              <a href="tel:+4962218686188">06221 8686188</a>
+            </li>
+            <li>
+              <span class="contact__label">Öffnungszeiten</span>
+              <span>Täglich 16:45 – 21:30 Uhr</span>
+            </li>
+          </ul>
+          <div class="contact__cta reveal">
+            <a href="https://bestelleck.de/pizza-express" target="_blank" rel="noopener" class="btn btn--solid btn--lg">Online bestellen</a>
+            <a href="tel:+4962218686188" class="btn btn--ghost btn--lg">Anrufen</a>
+          </div>
+        </div>
+        <div class="contact__card reveal">
+          <span class="rating rating--big"><strong>4,8</strong>/5</span>
+          <span class="rating__stars rating__stars--big" aria-hidden="true">★★★★★</span>
+          <p>355 Gäste haben Da Mario bewertet.</p>
+          <div class="contact__badges">
+            <span>Abholung 5–40 Min.</span>
+            <span>Lieferung</span>
+            <span>5 % Rabatt online</span>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer__inner">
+      <div>
+        <span class="footer__brand">Pizza Express Da Mario</span>
+        <p>Ringstraße 5, 69221 Dossenheim<br />Inhaber: Tuncay Tokgül</p>
+      </div>
+      <div class="footer__contact">
+        <a href="tel:+4962218686188">06221 8686188</a>
+        <a href="mailto:Tuncaytokgul@gmail.com">Tuncaytokgul@gmail.com</a>
+      </div>
+    </div>
+    <p class="footer__legal">© <span id="year"></span> Pizza Express Da Mario · Alle Preise inkl. MwSt.</p>
+  </footer>
+
+  <!-- Sticky mobile order bar -->
+  <a href="https://bestelleck.de/pizza-express" target="_blank" rel="noopener" class="order-fab">Jetzt bestellen</a>
+
+  <script src="https://cdn.jsdelivr.net/npm/@studio-freight/lenis@1.0.42/dist/lenis.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  <script src="js/menu.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
