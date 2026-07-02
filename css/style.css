@@ -161,7 +161,7 @@ h1, h2, h3 { font-family: var(--font-display); font-weight: 500; line-height: 1.
 .menu__head { text-align: center; margin-bottom: 3rem; }
 .menu__head h2 { font-size: clamp(2rem, 4.5vw, 3.4rem); }
 .menu__note { color: var(--text-dim); font-size: .9rem; margin-top: .8rem; }
-.menu__tabs { display: flex; flex-wrap: wrap; gap: .5rem; justify-content: center; margin-bottom: 3rem; position: sticky; top: 74px; z-index: 20; padding: .5rem 0; }
+.menu__tabs { display: flex; flex-wrap: wrap; gap: .5rem; justify-content: center; margin-bottom: 3rem; position: sticky; top: 0; z-index: 20; padding: 1rem 0; background: var(--bg); }
 .menu__tab {
   font-family: var(--font-body); font-size: .9rem; color: var(--text-mute);
   background: var(--surface); border: 1px solid var(--line); border-radius: 999px;
@@ -239,6 +239,16 @@ h1, h2, h3 { font-family: var(--font-display); font-weight: 500; line-height: 1.
 
 /* sticky mobile order fab */
 .order-fab { display: none; position: fixed; left: 1rem; right: 1rem; bottom: 1rem; z-index: 40; background: var(--accent); color: #1a1206; text-align: center; padding: 1rem; border-radius: 999px; font-weight: 600; box-shadow: 0 8px 30px rgba(0,0,0,.5); }
+.order-fab-bg { display: none; }
+@media (max-width: 860px) {
+  .order-fab-bg {
+    display: block; position: fixed; left: 0; right: 0; bottom: 0; height: 110px; z-index: 39; pointer-events: none;
+    background: linear-gradient(to top, var(--bg) 35%, transparent);
+    -webkit-backdrop-filter: blur(7px); backdrop-filter: blur(7px);
+    -webkit-mask-image: linear-gradient(to top, #000 45%, transparent);
+    mask-image: linear-gradient(to top, #000 45%, transparent);
+  }
+}
 
 /* ============ REVEAL ============ */
 .reveal { opacity: 0; transform: translateY(24px); }
@@ -251,10 +261,10 @@ h1, h2, h3 { font-family: var(--font-display); font-weight: 500; line-height: 1.
   .story, .contact__inner, .reviews__grid { grid-template-columns: 1fr; }
   .story__media { order: -1; }
   .menu__grid { grid-template-columns: 1fr; gap: 0; }
-  .menu__tabs { top: 64px; }
+  .menu__tabs { position: static; margin-bottom: 2rem; padding: 0; }
   .contact__card { max-width: 420px; }
   .order-fab { display: block; }
-  .hero { padding-bottom: 6rem; }
+  .hero { align-items: flex-start; padding-top: 7rem; padding-bottom: 3rem; }
 }
 
 @media (prefers-reduced-motion: reduce) {
