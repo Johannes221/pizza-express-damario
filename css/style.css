@@ -122,7 +122,7 @@ h1, h2, h3 { font-family: var(--font-display); font-weight: 500; line-height: 1.
 .hero__eyebrow { font-size: .78rem; letter-spacing: .28em; text-transform: uppercase; color: var(--accent); margin-bottom: 1.4rem; }
 .hero__title { font-size: clamp(2.7rem, 8vw, 6rem); margin-bottom: 1.6rem; }
 .hero__title span { display: block; }
-.hero__title--em { font-style: italic; color: var(--accent-soft); font-weight: 400; }
+.hero__title--em { color: var(--accent-soft); font-weight: 500; }
 .hero__lead { font-size: clamp(1.05rem, 1.6vw, 1.3rem); color: var(--text-mute); max-width: 46ch; margin-bottom: 2.2rem; }
 .hero__cta { display: flex; gap: .8rem; flex-wrap: wrap; margin-bottom: 2.4rem; }
 .hero__meta { display: flex; align-items: center; gap: 1rem; flex-wrap: wrap; color: var(--text-mute); font-size: .95rem; }
