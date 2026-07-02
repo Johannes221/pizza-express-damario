@@ -6,6 +6,7 @@
   <title>Pizza Express Da Mario · Dossenheim — Pizza, Pasta & mehr</title>
   <meta name="description" content="Handgemachte Pizza, Pasta und Schnitzel in Dossenheim. Frisch aus dem Ofen von Da Mario. Abholung & Lieferung – 4,8 von 5 bei 355 Bewertungen." />
   <meta name="theme-color" content="#0e0b09" />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E%F0%9F%8D%95%3C/text%3E%3C/svg%3E" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
@@ -35,9 +36,23 @@
     },
     "aggregateRating": {
       "@type": "AggregateRating",
-      "ratingValue": "4.8",
-      "reviewCount": "355"
-    }
+      "ratingValue": "4.3",
+      "reviewCount": "126"
+    },
+    "review": [
+      {
+        "@type": "Review",
+        "author": { "@type": "Person", "name": "Galaxy4fun" },
+        "reviewRating": { "@type": "Rating", "ratingValue": "5", "bestRating": "5" },
+        "reviewBody": "Ich bin absolut begeistert von diesem Pizzaladen! Die Pizza schmeckt frisch, der Teig ist perfekt knusprig und die Zutaten sind von hoher Qualität."
+      },
+      {
+        "@type": "Review",
+        "author": { "@type": "Person", "name": "Admir Hering" },
+        "reviewRating": { "@type": "Rating", "ratingValue": "5", "bestRating": "5" },
+        "reviewBody": "Sehr leckere Pizza und absolut freundlicher Service! Die Pizzen sind super belegt, der Teig ist schön knusprig und die Lieferung war schnell und zuverlässig."
+      }
+    ]
   }
   </script>
 </head>
@@ -51,6 +66,7 @@
     <nav class="nav__links" aria-label="Hauptnavigation">
       <a href="#speisekarte">Speisekarte</a>
       <a href="#geschichte">Über uns</a>
+      <a href="#bewertungen">Bewertungen</a>
       <a href="#kontakt">Kontakt</a>
     </nav>
     <div class="nav__actions">
@@ -66,6 +82,7 @@
   <div class="mobile-menu" id="mobile-menu" hidden>
     <a href="#speisekarte">Speisekarte</a>
     <a href="#geschichte">Über uns</a>
+    <a href="#bewertungen">Bewertungen</a>
     <a href="#kontakt">Kontakt</a>
     <a href="tel:+4962218686188" class="btn btn--ghost">06221 8686188</a>
     <a href="https://bestelleck.de/pizza-express" target="_blank" rel="noopener" class="btn btn--solid">Jetzt bestellen</a>
@@ -79,23 +96,23 @@
         <div class="hero__scrim"></div>
       </div>
       <div class="hero__inner">
-        <p class="hero__eyebrow reveal">Dossenheim · seit über 20 Jahren</p>
+        <p class="hero__eyebrow reveal">Dossenheim · Pizza, Pasta &amp; mehr</p>
         <h1 class="hero__title">
           <span class="reveal">Aus dem Ofen,</span>
           <span class="reveal hero__title--em">nicht von der Stange.</span>
         </h1>
         <p class="hero__lead reveal">
-          Pizza auf dünnem Boden, Pasta mit Sauce vom Vortag angesetzt,
-          Schnitzel frisch paniert. Kein Schnickschnack – nur das, was schmeckt.
+          Knuspriger Teig, frische Zutaten, schnelle Lieferung. Dafür empfehlen
+          die Gäste Da Mario seit Jahren.
         </p>
         <div class="hero__cta reveal">
           <a href="https://bestelleck.de/pizza-express" target="_blank" rel="noopener" class="btn btn--solid btn--lg">Jetzt bestellen</a>
           <a href="#speisekarte" class="btn btn--ghost btn--lg">Zur Speisekarte</a>
         </div>
         <div class="hero__meta reveal">
-          <span class="rating"><strong>4,8</strong>/5 <span class="rating__stars" aria-hidden="true">★★★★★</span></span>
+          <span class="rating"><strong>4,3</strong>/5 <span class="rating__stars" aria-hidden="true">★★★★★</span></span>
           <span class="dot" aria-hidden="true"></span>
-          <span>355 Bewertungen</span>
+          <span>126 Google-Bewertungen</span>
           <span class="dot" aria-hidden="true"></span>
           <span>Abholung &amp; Lieferung</span>
         </div>
@@ -109,13 +126,11 @@
         <p class="kicker reveal">Da Mario</p>
         <h2 class="reveal">Ein kleiner Laden in der Ringstraße, der sein Handwerk kann.</h2>
         <p class="reveal">
-          Bei uns gibt es keine Fließband-Pizza. Der Teig ruht, bis er soll.
-          Belegt wird von Hand, gebacken heiß und kurz, damit der Rand aufgeht
-          und die Mitte dünn bleibt. Dazu Pasta, Schnitzel und Salate –
-          alles frisch gemacht, wenn ihr bestellt.
+          Frische Zutaten, ein knuspriger Teig und Portionen, die satt machen.
+          Ob Pizza, Pasta, Schnitzel oder Salat: gemacht wird, wenn ihr bestellt.
         </p>
         <p class="reveal">
-          Über 350 Gäste haben uns mit 4,8 von 5 bewertet. Kommt vorbei
+          Mehr als 120 Gäste haben Da Mario auf Google bewertet. Kommt vorbei
           oder lasst euch das Essen nach Hause bringen.
         </p>
         <a href="#speisekarte" class="link-arrow reveal">Die ganze Karte ansehen</a>
@@ -151,9 +166,48 @@
     <section class="band">
       <img src="assets/img/pasta.jpg" alt="Dampfende Pasta al Forno in Tonschale" class="band__img" loading="lazy" />
       <div class="band__scrim"></div>
-      <blockquote class="band__quote reveal">
-        „Frisch, heiß, ehrlich. Genau wie beim Italiener soll.“
-      </blockquote>
+      <figure class="band__quote reveal">
+        <blockquote>„Die beste Pizza in Dossenheim!“</blockquote>
+        <figcaption>Christopher D. · Google-Rezension</figcaption>
+      </figure>
+    </section>
+
+    <!-- BEWERTUNGEN -->
+    <section class="reviews" id="bewertungen">
+      <div class="reviews__head">
+        <p class="kicker reveal">Google-Bewertungen</p>
+        <h2 class="reveal">Das sagen die Gäste.</h2>
+        <p class="reviews__score reveal">
+          <span class="rating"><strong>4,3</strong>/5 <span class="rating__stars" aria-hidden="true">★★★★★</span></span>
+          <span class="dot" aria-hidden="true"></span>
+          <span>126 Rezensionen auf Google</span>
+        </p>
+      </div>
+      <div class="reviews__grid">
+        <figure class="review reveal">
+          <div class="review__stars" aria-label="5 von 5 Sternen">★★★★★</div>
+          <blockquote>Ich bin absolut begeistert von diesem Pizzaladen! Die Pizza schmeckt frisch, der Teig ist perfekt knusprig und die Zutaten sind von hoher Qualität. Besonders die Auswahl ist super, für jeden Geschmack ist etwas dabei.</blockquote>
+          <figcaption><span class="review__author">Galaxy4fun</span><span class="review__date">vor einem Monat</span></figcaption>
+        </figure>
+        <figure class="review reveal">
+          <div class="review__stars" aria-label="5 von 5 Sternen">★★★★★</div>
+          <blockquote>Sehr leckere Pizza und absolut freundlicher Service! Bei Pizza Express Da Mario schmeckt man sofort, dass frische Zutaten verwendet werden. Die Pizzen sind super belegt, der Teig ist schön knusprig und die Lieferung war schnell und zuverlässig.</blockquote>
+          <figcaption><span class="review__author">Admir Hering</span><span class="review__date">vor einem Monat</span></figcaption>
+        </figure>
+        <figure class="review reveal">
+          <div class="review__stars" aria-label="5 von 5 Sternen">★★★★★</div>
+          <blockquote>Leckere Pizza und Lasagne, freundliches Personal, schnelle Lieferung bzw. Abholung und faire Preise. Kann ich nur empfehlen.</blockquote>
+          <figcaption><span class="review__author">Andreas Busch</span><span class="review__date">vor einem Jahr</span></figcaption>
+        </figure>
+        <figure class="review reveal">
+          <div class="review__stars" aria-label="5 von 5 Sternen">★★★★★</div>
+          <blockquote>Die Pizza ist einfach super lecker. Die Lieferanten sind alle auch super freundlich und der Service top. Bestellen gerne dort.</blockquote>
+          <figcaption><span class="review__author">Vanessa Geiger</span><span class="review__date">vor 2 Jahren</span></figcaption>
+        </figure>
+      </div>
+      <div class="reviews__cta reveal">
+        <a href="https://www.google.com/maps/place/Pizza+Express+Da+Mario+Dossenheim/@49.4457961,8.6720807,16z/data=!4m6!3m5!1s0x4797c1550926b281:0x9f1728466967456f!8m2!3d49.4457926!4d8.6746556" target="_blank" rel="noopener" class="btn btn--ghost btn--lg">Alle Bewertungen auf Google</a>
+      </div>
     </section>
 
     <!-- KONTAKT -->
@@ -182,9 +236,9 @@
           </div>
         </div>
         <div class="contact__card reveal">
-          <span class="rating rating--big"><strong>4,8</strong>/5</span>
+          <span class="rating rating--big"><strong>4,3</strong>/5</span>
           <span class="rating__stars rating__stars--big" aria-hidden="true">★★★★★</span>
-          <p>355 Gäste haben Da Mario bewertet.</p>
+          <p>126 Gäste haben Da Mario auf Google bewertet.</p>
           <div class="contact__badges">
             <span>Abholung 5–40 Min.</span>
             <span>Lieferung</span>
